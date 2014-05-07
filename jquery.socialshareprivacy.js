@@ -100,8 +100,8 @@
                 return;
             }
 
-            var key = pair.substr(0, eq_idx).trim();
-            var val = pair.substr(++eq_idx, pair.length).trim();
+            var key = $.trim(pair.substr(0, eq_idx));
+            var val = $.trim(pair.substr(++eq_idx, pair.length));
 
             // quoted values
             if ('"' == val[0]) {
